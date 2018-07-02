@@ -27,24 +27,43 @@
   <body>
     
     <center>
-      <div id="login-box">
-
-        <div id="login-icon">
-
-          <span class="vert-mid"><i class="material-icons">account_circle</i></span>
-
-        </div>
-
-        <div id="login-body">
-
-          <form name="login" action="www.w3schools.com/action_page.php" method="post">
-
-            <input type="text" name="username" placeholder="username" />
-            <input type="password" name="password" placeholder="password" />
-            <input type="submit" value="Log In" />
-
-          </form>
-
+       
+      <div id="login" class="vert-mid">
+        
+        <div class="title" id="login-title">Log in to BEAR</div>
+        
+        <div id="login-box">
+          
+          <div id="login-icon">
+            
+            <span class="vert-mid"><i class="material-icons" id="login-icon-txt">account_circle</i></span>
+            
+          </div>
+          
+          <div id="login-body">
+            
+            <form name="login" action="www.w3schools.com/action_page.php" method="post">
+              
+              <div id="login-texts">
+                
+                <div class="vert-mid">
+                  <input class="input-text" type="text" name="username" placeholder="username" />
+                  <input class="input-text" type="password" name="password" placeholder="password" />
+                </div>
+                
+              </div>
+              
+              <div id="login-submit">
+                
+                <div class="vert-mid">
+                  <input class="btn btn-blue" type="submit" value="Log In" />
+                </div>
+                
+              </div>
+              
+            </form>
+            
+          </div>
         </div>
       </div>
     </center>
