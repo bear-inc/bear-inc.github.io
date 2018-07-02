@@ -103,7 +103,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.input-text:active {
+.input-text:active .input-text:focus {
   
   background-color: lightgray;
   transition: background-color: 0.3s;
@@ -123,11 +123,12 @@ body {
   
 }
 
-.btn:active {
+.btn:active .btn:focus {
   
   background-color: lightgray;
   color: black;
   transition: background-color 0.3s, color 0.3s;
+  outline: none;
   
 }
 
