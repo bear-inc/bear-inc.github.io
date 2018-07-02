@@ -1,1 +1,138 @@
+/* ======= GENERAL ======= */
 
+body {
+  
+  font-family: sans-serif;
+  
+}
+
+.vert-mid {
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+}
+
+.title {
+  
+  font-size: 250%;
+  font-weight: bolder;
+  
+}
+
+.body {
+  
+  font-size: 150%;
+  font-weight: lighter;
+  
+}
+
+/* ======= LOGIN ======= */
+
+#login {  /* has vert-mid class */
+  
+  width: 60%;
+  height: 70%;
+  
+}
+
+#login-title {
+  
+  height: 5%;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#login-box {
+  
+  height: 95%;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #E9E9E9;
+  
+}
+
+#login-icon {
+  
+  height: 50%;
+  width: 100%;
+  
+}
+
+#login-icon-txt {  /* has vert-mid class */
+  
+  font-size: 500%;
+  
+}
+
+#login-body {
+  
+  height: 50%;
+  width: 100%;
+  
+}
+
+#login-texts {
+  
+  height: 50%;
+  width: 100%;
+  
+}
+
+#login-submit {
+  
+  height: 50%;
+  width: 100%;
+  
+}
+
+/* ======= INPUTS ======= */
+
+.input-text {
+  
+  -webkit-appearance: none;
+  width: 90%;
+  height: 30%;
+  border: solid 1px lightgray;
+  background-color: white;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.input-text:active {
+  
+  background-color: lightgray;
+  transition: background-color: 0.3s;
+  outline: none;
+  
+}
+
+.btn {
+  
+  -webkit-appearance: none;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+  background-color: gray;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+
+.btn:active {
+  
+  background-color: lightgray;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+
+.btn-blue {
+  
+  background-color: #0076FF;
+  
+}
