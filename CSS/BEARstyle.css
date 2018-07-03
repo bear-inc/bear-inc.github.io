@@ -65,13 +65,13 @@ body {
   position: relative;
   height: 60%;
   width: 100%;
-  top: 5%;
   
 }
 
 #login-icon-txt {  /* has vert-mid class */
   
   font-size: 20vh;
+  color: darkgray;
   
 }
 
