@@ -94,6 +94,19 @@ body {
   
 }
 
+/* ======= MENU BAR ======= */
+
+#menubar {
+    
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
 /* ======= INPUTS ======= */
 
 .input-text {
