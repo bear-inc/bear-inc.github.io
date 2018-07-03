@@ -80,19 +80,17 @@ body {
 
 #login-texts {
   
-  position: absolute;
+  position: relative;
   height: 50%;
   width: 100%;
-  top: 0;
   
 }
 
 #login-submit {
   
-  position: absolute;
+  position: relative;
   height: 50%;
   width: 100%;
-  top: 50%;
   
 }
 
