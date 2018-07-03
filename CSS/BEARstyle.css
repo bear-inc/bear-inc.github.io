@@ -33,7 +33,7 @@ body {
 
 #login {  /* has vert-mid class */
   
-  width: 60%;
+  width: 40%;
   height: 70%;
   
 }
@@ -70,7 +70,7 @@ body {
 
 #login-icon-txt {  /* has vert-mid class */
   
-  font-size: 1500%;
+  font-size: 20vh;
   
 }
 
