@@ -67,30 +67,26 @@ body {
 
 #login-icon-txt {  /* has vert-mid class */
   
-  font-size: 500%;
-  
-}
-
-#login-body {
-  
-  height: 50%;
-  width: 100%;
+  font-size: 1500%;
   
 }
 
 #login-texts {
   
-  position: relative;
-  height: 50%;
+  position: absolute;
+  height: 30%;
   width: 100%;
+  top: 50%;
+  font-size: 150%;
   
 }
 
 #login-submit {
   
-  position: relative;
-  height: 50%;
+  position: absolute;
+  height: 20%;
   width: 100%;
+  top: 80%;
   
 }
 
@@ -110,7 +106,7 @@ body {
 .input-text:active, .input-text:focus {
   
   background-color: lightgray;
-  transition: background-color: 0.3s;
+  transition: background-color 0.3s;
   outline: none;
   
 }
@@ -118,12 +114,13 @@ body {
 .btn {
   
   -webkit-appearance: none;
-  padding: 5px;
+  padding: 15px;
   border: none;
-  border-radius: 7px;
+  border-radius: 13px;
   background-color: gray;
   color: white;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 200%;
   
 }
 
