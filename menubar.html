@@ -34,9 +34,7 @@
   
     <body onload="fabricate(array)">
     
-    <div id="menubar">
-      Your browser does not support Menubar
-    </div>
+    <ul id="menubar"></ul>
     
     <script>
       
@@ -48,14 +46,14 @@
         
         for (var category = 0; category < paramArray.length; category++) {
           
-          str += "<div class='category' style='width: " + (100 / paramArray.length) + "%;'><span class='vert-mid'>" + paramArray[category][0][0] + "</span><div class='itemSelect'>";
+          str += "<li class='dropdown'><a href='javascript:void(0)' class='dropbtn'>" + paramArray[category][0][0] + "</a><div class='dropdown-content'>";
           
           for (var item = 0; item < paramArray[category].length; item++) {
             
-            str += "<div class='item' onmousedown='window.location.href=\"" + paramArray[category][item][2] + "\"'>" + paramArray[category][item][1] + "</div>";
+            str += "<a href='" + paramArray[category][item][2] + "'>" + paramArray[category][item][1] + "</a>";
           }
           
-          str += "</div></div>";
+          str += "</li>";
         }
         
         menu.innerHTML = str;
