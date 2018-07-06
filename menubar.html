@@ -52,13 +52,11 @@
           
           for (var item = 0; item < paramArray[category].length; item++) {
             
-            str += "<div class='item' onmousedown='window.location.href=\"" + paramArray[category][item][3] + "\"'>" + paramArray[category][item][1] + "</div>";
+            str += "<div class='item' onmousedown='window.location.href=\"" + paramArray[category][item][2] + "\"'>" + paramArray[category][item][1] + "</div>";
           }
           
-          str += "</div>";
+          str += "</div></div>";
         }
-        
-        str += "</div>";
         
         menu.innerHTML = str;
       }
