@@ -107,7 +107,7 @@ body {
     
 }
 
-.dropdown {
+.dropdown, #menubar li {
   
   float: left;
   
