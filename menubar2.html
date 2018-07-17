@@ -22,7 +22,7 @@
     
     <!-- ======= Style ======= -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="/CSS/BEARstyle.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/menubar2.css" />
     
     <script>
       
@@ -34,9 +34,13 @@
     
   </head>
   
-    <body onload="fabricate(array)">
+  <body onload="fabricate(array)">
     
-    <ul id="menubar"></ul>
+    <div id="cssmenu">
+      
+      <ul id="menubar"></ul>
+      
+    </div>
     
     <script>
       
@@ -44,18 +48,18 @@
         
         var menu = document.getElementById("menubar");
         
-        var str = "<li><a href='#homepage'><i class='material-icons' style='position: relative; top: 50%; transform: translateY(-50%);'>home</i></a></li>";
+        var str = "<li><a href='#homepage'><span>Home</span></a></li>";
         
         for (var category = 0; category < paramArray.length; category++) {
           
-          str += "<li class='dropdown'><a href='javascript:void(0)' class='dropbtn'>" + paramArray[category][0][0] + "</a><div class='dropdown-content'>";
+          str += "<li class='has-sub'><a href='javascript:void(0)'><span>" + paramArray[category][0][0] + "</span></a><ul>";
           
           for (var item = 0; item < paramArray[category].length; item++) {
             
-            str += "<a href='" + paramArray[category][item][2] + "'>" + paramArray[category][item][1] + "</a>";
+            str += "<li><a href='" + paramArray[category][item][2] + "'><span>" + paramArray[category][item][1] + "</span></a></li>";
           }
           
-          str += "</li>";
+          str += "</ul></li>";
         }
         
         menu.innerHTML = str;
