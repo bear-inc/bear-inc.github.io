@@ -7,27 +7,87 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="/form.css">
     
+    <script>
+      
+      var formArr = [ "post",
+                      [ "Name",
+                        ["text", "cont_fname", "first name", ""],
+                        ["text", "cont_mname", "middle name", ""],
+                        ["text", "cont_lname", "last name", ""]
+                      ],
+                      [ "Contact Info",
+                        ["email", "cont_email", "email", ""],
+                        ["tel", "cont_cell", "cell phone", ""],
+                        ["tel", "cont_tel", "home phone", ""]
+                      ]
+                    ];
+      
+    </script>
+    
   </head>
   
-  <body>
+  <body onload="buildForm(formArr);">
     
     <center>
       
       <div id="form-container">
-        
-        <div id="form-head">Form</div>
-        <div id="form-body">das</div>
-        <div id="form-foot">asd</div>
-        
+        <form id="form" method="post">
+          
+          <div id="form-head">Form</div>
+          <div id="section-body-table">
+            <div id="form-section"></div>
+            <div id="form-body">JavaScript must be enabled to view this form</div>
+          </div>
+          <div id="form-foot"></div>
+          
+        </form>
       </div>
       
     </center>
     <script>
       
-      function buildForm() {
+      /*
+      form array:
+      [ "method",
+        [ "section name",
+                          ["input type", "input name", "placeholder", "value"],
+                          ["input type", "input name", "placeholder", "value"],
+                          ["input type", "input name", "placeholder", "value"], ...
+        ],
+        [ "section name",
+                          ["input type", "input name", "placeholder", "value"],
+                          ["input type", "input name", "placeholder", "value"],
+                          ["input type", "input name", "placeholder", "value"], ...
+        ], ...
+      ]
+      */
+      
+      function buildForm(form) {
         
-        var head = document.getElementById("form-head");
-        head.innerHTML = "lkdsa";
+        var body = document.getElementById("form-body");
+        var foot = document.getElementById("form-foot");
+        var sect = document.getElementById("form-section");
+        var sbot = document.getElementById("section-body-table");
+        
+        if (form.length > 2) {
+          
+          var sectStr = "";
+          for (var i = 1; i < form.length i++) {
+            
+            sectStr += "<div id='sect-" + form[i][0] + "' class='form-sect'>" + form[i][0] + "</div>";
+          }
+          
+          sect.style.width = "15%";
+          body.style.width = "85%";
+          sbot.style.display = "table";
+          sect.style.display = "table-cell";
+          body.style.display = "table-cell";
+          sect.style.borderTopLeftRadius = "13px";
+          body.style.borderTopLeftRadius = "0";
+          sect.style.backgroundColor = "EEE";
+          
+        }
+        
       }
       
     </script>
