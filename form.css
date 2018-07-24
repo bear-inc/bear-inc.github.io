@@ -19,11 +19,33 @@
   
 }
 
+#form-section {
+  
+  display: none;
+  
+}
+
+.form-sect {
+  
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  
+}
+
+#section-body-table {
+  
+  width: 80%;
+  height: fit-content;
+  overflow-x: hidden;
+  
+}
+
 #form-body {
   
   max-height: 50%;
   min-height: 10%;
-  width: 80%;
+  width: 100%;
   background-color: #F5F5F5;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
