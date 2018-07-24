@@ -1,1 +1,35 @@
+#form-container {
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-family: Raleway;
+  
+}
 
+#form-head {
+  
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: fit-content;
+  transform: translateX(-50%);
+  font-size: 200%;
+  font-weight: 500;
+  
+}
+
+#form-body {
+  
+  position: absolute;
+  
+}
+
+#form-foot {
+  
+  position: absolute;
+  
+}
